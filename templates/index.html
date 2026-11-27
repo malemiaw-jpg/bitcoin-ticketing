@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bitcoin Ticketing | Events Made Simple</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    {% include "header.html" %}
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <p class="eyebrow">THE FUTURE OF EVENT TICKETING</p>
+
+            <h1>
+                Your Next Event.<br>
+                <span>Powered by Bitcoin.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover exciting events, purchase tickets using
+                Bitcoin Lightning, and receive your digital ticket instantly.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/events" class="primary-button">
+                    Explore Events
+                </a>
+
+                <a href="#how-it-works" class="secondary-button">
+                    How It Works
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>Fast</h3>
+                    <p>Lightning payments</p>
+                </div>
+
+                <div>
+                    <h3>Secure</h3>
+                    <p>QR ticket verification</p>
+                </div>
+
+                <div>
+                    <h3>Digital</h3>
+                    <p>Instant delivery</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="ticket-preview">
+                <span class="ticket-label">FEATURED EVENT</span>
+
+                <h2>Malawi Tech Summit</h2>
+
+                <p>Technology • Innovation • Networking</p>
+
+                <div class="ticket-divider"></div>
+
+                <div class="ticket-info">
+                    <div>
+                        <small>LOCATION</small>
+                        <strong>Lilongwe, Malawi</strong>
+                    </div>
+
+                    <div>
+                        <small>PAYMENT</small>
+                        <strong>Bitcoin Lightning</strong>
+                    </div>
+                </div>
+
+                <div class="ticket-price">
+                    <span>Starting from</span>
+                    <h2>0.0001 BTC</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+
+        <div class="section-heading">
+            <p class="eyebrow">SIMPLE AND FAST</p>
+            <h2>How It Works</h2>
+            <p>Getting your event ticket has never been easier.</p>
+        </div>
+
+        <div class="steps">
+
+            <div class="step-card">
+                <h3>01</h3>
+                <h4>Discover Events</h4>
+                <p>Find conferences, workshops, concerts and other events.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>02</h3>
+                <h4>Pay with Bitcoin</h4>
+                <p>Pay securely using the Lightning Network.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>03</h3>
+                <h4>Get Your Ticket</h4>
+                <p>Receive your digital ticket with a unique QR code.</p>
+            </div>
+
+            <div class="step-card">
+                <h3>04</h3>
+                <h4>Enjoy the Event</h4>
+                <p>Present your QR code for verification at the entrance.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>₿ Ticketing</h2>
+            <p>Making event payments faster with Bitcoin Lightning.</p>
+            <p class="copyright">
+                &copy; 2026 Bitcoin Ticketing. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

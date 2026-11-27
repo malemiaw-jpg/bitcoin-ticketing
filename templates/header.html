@@ -1,0 +1,22 @@
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">₿ Ticketing</a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a>
+            </li>
+
+            <li>
+                <a href="/events" class="{% if request.path.startswith('/events') %}active{% endif %}">Events</a>
+            </li>
+
+            <li>
+                <a href="/admin" class="{% if request.path.startswith('/admin') %}active{% endif %}">Organisers</a>
+            </li>
+        </ul>
+
+        <a href="/events" class="nav-button">Explore Events</a>
+    </nav>
+</header>

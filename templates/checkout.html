@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bitcoin Ticketing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    {% include "header.html" %}
+
+    <main>
+        <section class="events-hero">
+            <div class="container">
+                <h1>Complete Your Booking</h1>
+                <p>Enter your details to continue to payment.</p>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <div class="container">
+                <div class="event-info">
+                    <h2>Customer Details</h2>
+
+                    <form action="/payment" method="POST">
+                        <label for="event_id">Event</label>
+                        <select id="event_id" name="event_id" required>
+                            <option value="1">Malawi Tech Summit</option>
+                            <option value="2">Entrepreneurs Meetup</option>
+                            <option value="3">Digital Skills Workshop</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="customer_name">Full Name</label>
+                        <input
+                            type="text"
+                            id="customer_name"
+                            name="customer_name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                        <br><br>
+
+                        <label for="customer_email">Email Address</label>
+                        <input
+                            type="email"
+                            id="customer_email"
+                            name="customer_email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <br><br>
+
+                        <button type="submit" class="event-button">
+                            Continue to Payment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Bitcoin Ticketing. Powered by Bitcoin Lightning.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
